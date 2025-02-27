@@ -8,13 +8,11 @@ import { ChevronsLeft } from '@/components/icons/ChevronsLeft';
 const postsDirectory = path.join(process.cwd(), '/posts');
 
 interface Props {
-  params: {
-    slug: string;
-  }
+  params: Promise<{ slug: string }>
 }
 
 export default async function Post( { params }: Props ) {
-  const { slug } = params;
+  const slug = (await params).slug
   const filePath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(fileContents);
