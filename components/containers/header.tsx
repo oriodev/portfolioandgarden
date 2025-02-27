@@ -4,23 +4,27 @@ export default function Header() {
 
     const links = [
         {
+            title: '🪴 home',
+            slug: '/'
+        },
+        {
             title: '⚙️ projects',
-            slug: '/projects'
+            slug: '/'
         },        {
             title: '🌱 about',
-            slug: '/projects'
+            slug: '/'
         },        {
             title: '💌 contact',
-            slug: '/projects'
+            slug: '/'
         },        {
             title: '📜 resume',
-            slug: '/projects'
+            slug: '/'
         },        {
             title: '🍀 digital garden',
-            slug: '/projects'
+            slug: '/'
         },        {
             title: '🧭 now',
-            slug: '/projects'
+            slug: '/'
         },
     ]
 

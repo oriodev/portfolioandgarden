@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-// Import the fonts in your _app.js or a custom Document
 import { Merriweather } from 'next/font/google';
+
 import Header from "@/components/containers/header";
 
 const merriweather = Merriweather({
@@ -11,7 +10,7 @@ const merriweather = Merriweather({
   weight: ['300', '400', '700', '900']
 });
 export const metadata: Metadata = {
-  title: "oriodev",
+  title: "oriodev.",
   description: "ori: portfolio and digital garden",
 };
 
