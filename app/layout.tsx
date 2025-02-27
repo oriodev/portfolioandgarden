@@ -3,6 +3,7 @@ import "./globals.css";
 
 // Import the fonts in your _app.js or a custom Document
 import { Merriweather } from 'next/font/google';
+import Header from "@/components/containers/header";
 
 const merriweather = Merriweather({
   variable: "--font-merriweather",
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body
         className={`${merriweather.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
