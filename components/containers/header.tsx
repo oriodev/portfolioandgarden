@@ -21,7 +21,7 @@ export default function Header() {
             slug: '/'
         },        {
             title: '🍀 digital garden',
-            slug: '/'
+            slug: '/digital-garden'
         },        {
             title: '🧭 now',
             slug: '/'

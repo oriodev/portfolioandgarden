@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
-import { ChevronsLeft } from '@/components/icons/ChevronsLeft';
+import BackButton from '@/components/icons/BackButton';
 
 const postsDirectory = path.join(process.cwd(), '/posts');
 
@@ -12,6 +12,8 @@ interface Props {
 }
 
 export default async function Post( { params }: Props ) {
+
+  // GET THE MD FILE AND PROCESS IT FOR RENDERING.
   const slug = (await params).slug
   const filePath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(filePath, 'utf8');
@@ -22,11 +24,20 @@ export default async function Post( { params }: Props ) {
   const contentHtml = processedContent.toString();
 
   return (
-    <div>
-      <ChevronsLeft className='text-black bg-rose-900' />
+    <main className='flex flex-col items-center w-full'>
 
-      <h1>{data.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-    </div>
+      <BackButton />
+
+      <section className='w-1/2 flex flex-col gap-3 items-center'>
+          <h1 className='text-3xl font-bold'>{data.title}</h1>
+
+          <div className='prose'>
+            <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+          </div>
+
+      </section>
+    </main>
+
+
   );
 }

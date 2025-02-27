@@ -37,3 +37,27 @@ a.effect-shine:hover {
 .clip-diagonal {
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
+
+.prose p {
+  margin-bottom: 1.2em;
+}
+
+.prose a {
+  color:rgb(19, 114, 114);
+  font-weight: bold;
+}
+
+.prose pre {
+  background-color: rgba(28, 110, 169, 0.072); 
+  border: 1px solid rgba(28, 99, 169, 0.254); 
+  border-radius: 4px;
+  padding: 16px; 
+  overflow: auto;
+  margin-bottom: 1.2em;
+}
+
+.prose code {
+  font-family: monospace;
+  font-size: larger;
+  color: rgb(7, 66, 66)
+}

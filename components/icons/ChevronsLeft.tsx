@@ -29,10 +29,11 @@ const ChevronsLeft = ({
   width = 28,
   height = 28,
   strokeWidth = 2,
-  stroke = "#ffffff",
+  stroke = "black",
   ...props
 }: ChevronsLeftProps) => {
   const controls = useAnimation();
+
 
   return (
     <div
