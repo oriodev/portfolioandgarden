@@ -4,6 +4,8 @@ date: "2023-10-01"
 status: "seedling"
 ---
 
+NOTE: I'M BACK AND I DON'T THINK YOU NEED BACKBLAZE, PROBABLY YOU CAN JUST DO IT WITH UPLOADTHING, BUT UPLOADTHING IS BEING AN ABSOLUTE NIGHTMARE SO I WILL UPDATE THIS WHEN IT STOPS BEING WORSE THAN CLOUDINARY SOMEHOW.
+
 so after spending several days on a wild goose chase trying to figure out best practice for storing profile pictures, i think i've finally got it. emphasis on think, because it really has been the wildest of goose chases. this time, i'm going to write it all out for you here to save you the trouble, if you happen to be in the very exact same boat as me (which, if you are, hi! cozy in here, huh?).
 
 we've got a next.js frontend and a nest.js backend, with mongodb for the server. for a hot minute there i was using cloudinary for my image hosting but this morning it broke and i have no desire to fix it because getting it working in the first place was terrible and frankly the gdpr issues with my use of it are not ideal. so i'm going to do it properly this time.
@@ -16,7 +18,23 @@ let's hope it works.
 
 [upload thing](https://docs.uploadthing.com/) is a helpful util that will basically handle the frontend stuff for you. it gives you upload buttons and components, so all you have to do is put it on your page, hook it up to your backend, and you're good to go.
 
-so with uploadthing, you have fileroutes, which are kinda likes apis but for your image uploads. you can set a bunch of important details here like max image size and max number images to upload. of since my project (album archive) has two types of images - profile pictures and lists - i am going to set up two fileroutes.
+to start off, you need to make an account and get your api keys.
+
+then install:
+
+```
+npm install uploadthing @uploadthing/react
+```
+
+and add your env token:
+
+```
+UPLOADTHING_TOKEN=... # A token for interacting with the SDK
+```
+
+honestly all of this is in the documentation, so you can just follow that.
+
+so with uploadthing, you have fileroutes, which are kinda likes apis but for your image uploads. you can set a bunch of important details here like max image size and max number of images to upload. since my project (album archive) has two types of images - profile pictures and lists - i am going to set up two fileroutes.
 
 once you've done that, you can get the components set up. the code is super simple and lovely.
 
@@ -76,7 +94,7 @@ export default uploadthing.router(ourFileRouter);
 
 **step three: mongodb.**
 
-so once uploadthing and backblaze have done their thing, you just need to hook it up to your database. i'm using mongo here but i'm sure it'll work with whatever. live your dream.
+so once uploadthing and backblaze have done their thing, you just need to hook it up to your database. i'm using mongo here but it'll work with whatever. live your dream.
 
 basically once we upload to backblaze, we need it to return the link to the image. then we can store that in our database, and when you want to recall the image later on, you just grab the link through your api!
 

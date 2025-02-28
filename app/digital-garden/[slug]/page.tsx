@@ -5,7 +5,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import BackButton from '@/components/icons/BackButton';
 
-const postsDirectory = path.join(process.cwd(), '/posts');
+const postsDirectory = path.join(process.cwd(), '/data/posts');
 
 interface Props {
   params: Promise<{ slug: string }>

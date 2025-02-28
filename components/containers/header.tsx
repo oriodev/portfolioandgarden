@@ -8,8 +8,8 @@ export default function Header() {
             slug: '/'
         },
         {
-            title: '⚙️ projects',
-            slug: '/'
+            title: '🔥 projects',
+            slug: '/#projects'
         },        {
             title: '🌱 about',
             slug: '/'
