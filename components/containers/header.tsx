@@ -8,28 +8,33 @@ export default function Header() {
             slug: '/'
         },
         {
+            title: '🌱 about',
+            slug: '/#about'
+        },        
+        {
             title: '🔥 projects',
             slug: '/#projects'
-        },        {
-            title: '🌱 about',
-            slug: '/'
-        },        {
+        },
+        {
             title: '💌 contact',
-            slug: '/'
-        },        {
+            slug: '/#contact'
+        },        
+        {
             title: '📜 resume',
             slug: '/'
-        },        {
+        },       
+        {
             title: '🍀 digital garden',
             slug: '/digital-garden'
-        },        {
+        },        
+        {
             title: '🧭 now',
             slug: '/'
         },
     ]
 
     return (
-        <div className="h-[100px] p-7 flex">
+        <div id='top' className="h-[150px] md:h-[80px] p-7 flex bg-white">
             <div className="flex-grow flex flex-wrap justify-center gap-5 font-bold text-cyan-700">
                 {
                     links.map((link) => (

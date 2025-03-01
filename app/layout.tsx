@@ -3,6 +3,7 @@ import "./globals.css";
 import { Merriweather } from 'next/font/google';
 
 import Header from "@/components/containers/header";
+import Footer from "@/components/containers/footer";
 
 const merriweather = Merriweather({
   variable: "--font-merriweather",
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

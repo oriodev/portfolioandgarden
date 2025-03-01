@@ -109,6 +109,13 @@ export default function Page() {
   }, [game]);
 
   const turnCard = () => {
+    setSnapDetected(false);
+
+    if (computerSnapTimeout) {
+      clearTimeout(computerSnapTimeout);
+      setComputerSnapTimeout(null);
+    }
+    
     const newCard = game.turnDeck(cardOne);
     setCardTwo(cardOne);
     setCardOne(newCard);

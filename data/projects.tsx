@@ -5,7 +5,7 @@ export const projects: Project[] = [
     title: "💿 album archive.",
     description: (
       <>
-        basically goodreads for music built with <strong>next.js</strong> and <strong>tailwind</strong>.
+        basically goodreads for music. built with <strong>next.js</strong> and <strong>tailwind</strong>.
         best features include sending album recs (with live notifications, built with <strong>socket.io</strong>)
         and joining group chats.
         the backend utilises the <strong>discogs api</strong> to get albums
@@ -32,20 +32,19 @@ export const projects: Project[] = [
     livedemo: "",
     github: "https://github.com/oriodev/oribebaking"
   },    {
-    title: "🪣 bucket list app.",
+    title: "🃏 snap!",
     description: (
       <>
-        a small <strong>next.js</strong> and <strong>shadcn</strong> project that i challenged myself
-        to build in five hours.
-        users can set and complete bucket list goals and track percentage completed.
-        includes toasts and light/dark mode for optimal user experience.
-        the backend is built with <strong>supabase</strong>.
+        a javascript snap game built with <strong>object oriented programming</strong> principles
+        and <strong>react</strong> state handling. user can play snap against a (kinda)
+        slow computer. still a wip but you can play the mvp now. multiplayer, win states, and keyboard
+        support coming.
       </>
     ),
-    image: "/projects/bucketlist.png",
+    image: "/projects/snap.png",
     type: "js",
-    livedemo: "",
-    github: "https://github.com/oriodev/albumarchive"
+    livedemo: "/projects/snap",
+    github: "https://github.com/oriodev/portfolioandgarden/tree/main/app/projects/snap"
   },
   {
     title: "🎨 etch-a-sketch.",
