@@ -1,4 +1,4 @@
-import { Project } from "@/types";
+import { Project } from "@/types/types";
 import Image from "next/image";
 
 import Button from "@/components/buttons/button";

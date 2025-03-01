@@ -3,7 +3,7 @@
 import { projects } from "@/data/projects";
 import ProjectCard from "../cards/projectcard";
 import { useState } from "react";
-import { Project } from "@/types";
+import { Project } from "@/types/types";
 import ProjectTypeFilters from "../buttons/projecttypefilters";
 
 export default function Projects() {

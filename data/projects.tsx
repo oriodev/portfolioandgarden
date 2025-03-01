@@ -1,11 +1,11 @@
-import { Project } from "@/types";
+import { Project } from "@/types/types";
 
 export const projects: Project[] = [
   {
     title: "💿 album archive.",
     description: (
       <>
-        basically goodreads for music built with <strong>next.js and tailwind</strong>.
+        basically goodreads for music built with <strong>next.js</strong> and <strong>tailwind</strong>.
         best features include sending album recs (with live notifications, built with <strong>socket.io</strong>)
         and joining group chats.
         the backend utilises the <strong>discogs api</strong> to get albums

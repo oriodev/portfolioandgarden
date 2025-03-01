@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { Post } from '@/types';
+import { Post } from '@/types/types';
 
 /**
  * gets all of our posts for the digital garden.

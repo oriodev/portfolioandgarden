@@ -1,4 +1,4 @@
-import { Post } from "@/types";
+import { Post } from "@/types/types";
 import Link from "next/link";
 
 interface Props {
