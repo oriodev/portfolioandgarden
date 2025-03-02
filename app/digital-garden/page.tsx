@@ -7,7 +7,7 @@ export default function Page() {
   const posts = getPosts();
   
   return (
-    <main className="flex flex-col items-center pt-15 md:pt-5 lg:pt-0">
+    <main className="flex flex-col h-[72vh] items-center pt-15 md:pt-5 lg:pt-0">
       <div className="w-full md:w-1/2 flex flex-col gap-5 items-center md:items-start">
         <TitleAndDescription
           title='🍀 digital garden.'

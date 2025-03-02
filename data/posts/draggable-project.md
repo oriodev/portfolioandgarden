@@ -12,4 +12,15 @@ for now, i'm just going to use this post to keep track of my various ideas so th
 
 the biggest hurdle in my mind for this project is that i want the characters to be represented by images that can be drag-and-dropped anywhere on the canvas, and then connected to other characters with lines. thankfully, i think the [react-draggable](https://www.npmjs.com/package/react-draggable) npm package will do the trick for this. all i actually need to do is store the x and y coordinates in the database and it should save state whenever the user reloads.
 
-for efficiency, i wonder if we could just save to db before leaving the page rather than after every single drag and drop.
+for efficiency, i wonder if we could just save to db before leaving the page rather than after every single drag and drop. or better, i could **debounce** by setting a userTimer() for a set period of time after the drag event has ended and THEN save. possibly a good middle ground.
+
+as for lines, i seem to have two options: draw the lines with svgs and update the coordinates as the items move OR draw the lines with HTML5 canvas.
+
+the first thing i would want to get figured out is the UI interface. once that's done, the rest should be fairly smooth sailing. i just need a database to keep track of the character details, pages to create, view, edit, delete characters, and like a sidebar and some UI stuff. there is authentication as well but that can come later. to start with, i can just use local storage, and move up to full auth later on if i need to. use supabase for db because it has auth and storage built in. also could use posthog later down the line to track user events/useage on the site.
+
+**MVP**
+the character canvas.
+
+character crud.
+
+local storage.

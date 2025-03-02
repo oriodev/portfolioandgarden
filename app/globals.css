@@ -72,8 +72,13 @@ p.effect-shine {
   font-weight: bold;
 }
 
+.about-text a {
+  color:rgb(22, 86, 132);
+  font-weight: bold;
+}
+
 .about-text a:hover {
-  color:rgb(22, 132, 132);
+  color:rgb(31, 110, 167);
 }
 
 .prose p {

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.17",
+    "dayjs": "^1.11.13",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.477.0",
     "motion": "^12.4.7",
