@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
-import BackButton from '@/components/icons/BackButton';
+import DropdownMenu from '@/components/dropdowns/dropdownmenu';
 
 const postsDirectory = path.join(process.cwd(), '/data/posts');
 
@@ -24,18 +24,20 @@ export default async function Post( { params }: Props ) {
   const contentHtml = processedContent.toString();
 
   return (
-    <main className='flex flex-col items-center w-full'>
+    <main className=''>
+      <DropdownMenu />
 
-      <BackButton />
+      <div className='flex flex-col items-center w-full'>
+        <section className='w-full sm:w-1/2 p-5 flex flex-col gap-3 items-center'>
+            <h1 className='text-3xl font-bold'>{data.title}</h1>
 
-      <section className='w-1/2 flex flex-col gap-3 items-center'>
-          <h1 className='text-3xl font-bold'>{data.title}</h1>
+            <div className='prose'>
+              <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+            </div>
 
-          <div className='prose'>
-            <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
-          </div>
+        </section>
+      </div>
 
-      </section>
     </main>
 
 

@@ -1,7 +1,7 @@
 ---
 title: "restful api design."
 date: "2025-03-01"
-status: "seedling"
+status: "evergreen"
 ---
 
 so album archive has a somewhat complex backend - at least by my meager standards - and it needs cleaning up. before i can get started with the spring cleaning, i want to figure out what sort of standards and best principles i should be following to ensure my api is clean, organised, and efficient. i'm going to be figuring out REST apis, collecting my research, and figuring out a set of simple guidelines to follow before i begin my refactor.

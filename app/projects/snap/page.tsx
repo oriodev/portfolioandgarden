@@ -1,11 +1,10 @@
 "use client"
 
+import DropdownMenu from "@/components/dropdowns/dropdownmenu";
 // SNAP TODO:
 // KEYBOARD SUPPORT.
 // WIN OVERLAY.
 // INTSTRUCTION/WELCOME OVERLAY.
-// MULTIPLAYER.
-// MULTIPLAYER OPTION CHOICE IN WELCOME OVERLAY.
 
 import { Suite } from "@/types/types.snap";
 import Image from "next/image";
@@ -154,70 +153,74 @@ export default function Page() {
         setComputerSnapTimeout(null);
       }
     }
-
   }
 
   return (
-    <main className="flex items-center justify-center min-h-[80vh] bg-white">
-      <div className="w-11/12 h-11/12 bg-gradient-to-tr from-pink-100 to-indigo-200 p-30 rounded-lg flex flex-col justify-center items-center gap-5">
-        {/* TOP BAR */}
-        <section className="flex flex-col gap-2 items-center">
-          <h1 className="text-5xl font-bold">🃏 SNAP!</h1>
-          <p className="font-bold text-2xl">{userScore} vs {computerScore}</p>
-          {gameOver && (
-            <p>game over!!</p>
-          )}
-        </section>
+    <main>
+      <DropdownMenu />
+      <div className="flex items-center justify-center min-h-[80vh] bg-white">
+        <div className="w-11/12 h-11/12 bg-gradient-to-tr from-pink-100 to-indigo-200 p-30 rounded-lg flex flex-col justify-center items-center gap-5">
+          {/* TOP BAR */}
+          <section className="flex flex-col gap-2 items-center">
+            <h1 className="text-5xl font-bold">🃏 SNAP!</h1>
+            <p className="font-bold text-2xl">{userScore} vs {computerScore}</p>
+            {gameOver && (
+              <p>game over!!</p>
+            )}
+          </section>
 
-        <section className="flex gap-5">
-          {
-            cardOne ? (
-              <div className="relative w-24 h-32">
-                <Image
-                  src={cardOne.getImageUrl()}
-                  alt={cardOne.number + cardOne.suite}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="hover:cursor-pointer"
-                  onClick={turnCard}
-                />
-              </div>
-            ) : (
-              <div className="relative w-24 h-32">
-                <Image
-                  src={'/projects/snap/7.png'}
-                  alt={'flipped card'}
-                  fill
+          <section className="flex gap-5">
+            {
+              cardOne ? (
+                <div className="relative w-24 h-32">
+                  <Image
+                    src={cardOne.getImageUrl()}
+                    alt={cardOne.number + cardOne.suite}
+                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="hover:cursor-pointer"
-                />
-              </div>
-            )
-          }
+                    className="hover:cursor-pointer"
+                    onClick={turnCard}
+                    priority
+                  />
+                </div>
+              ) : (
+                <div className="relative w-24 h-32">
+                  <Image
+                    src={'/projects/snap/7.png'}
+                    alt={'flipped card'}
+                    fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="hover:cursor-pointer"
+                    priority
+                  />
+                </div>
+              )
+            }
 
-          {
-            cardTwo && (
-              <div className="relative w-24 h-32">
-                <Image
-                  src={cardTwo.getImageUrl()}
-                  alt={cardTwo.number + cardTwo.suite}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-            )
-          }
+            {
+              cardTwo && (
+                <div className="relative w-24 h-32">
+                  <Image
+                    src={cardTwo.getImageUrl()}
+                    alt={cardTwo.number + cardTwo.suite}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              )
+            }
 
-        </section>
+          </section>
 
-        <section>
-          <div
-            onClick={userSnap}
-            className="w-full text-center p-5 pl-25 pr-25 rounded-lg font-bold bg-indigo-300 effect-shine hover:cursor-pointer transition"
-          >
-            SNAP
-          </div>
-        </section>
+          <section>
+            <div
+              onClick={userSnap}
+              className="w-full text-center p-5 pl-25 pr-25 rounded-lg font-bold bg-indigo-300 effect-shine hover:cursor-pointer transition"
+            >
+              SNAP
+            </div>
+          </section>
+        </div>
       </div>
     </main>
   );

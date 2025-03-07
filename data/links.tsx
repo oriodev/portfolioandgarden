@@ -2,7 +2,6 @@ export const links = [
   {
       title: '🪴 home',
       slug: '/',
-      main: true,
   },
   {
       title: '🌱 about',
@@ -19,7 +18,6 @@ export const links = [
   {
       title: '📜 resume',
       slug: '/',
-      main: true,
   },       
   {
       title: '🍀 digital garden',
@@ -28,6 +26,5 @@ export const links = [
   {
       title: '🧭 now',
       slug: '/now',
-      main: true,
   },
 ]
