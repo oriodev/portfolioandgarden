@@ -17,7 +17,7 @@ export const links = [
   },        
   {
       title: '📜 resume',
-      slug: '/',
+      slug: '/resume',
   },       
   {
       title: '🍀 digital garden',

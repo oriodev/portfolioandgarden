@@ -14,7 +14,7 @@ export const projects: Project[] = [
     ),
     image: "/projects/albumarchive.png",
     type: "js",
-    livedemo: "",
+    livedemo: "/projects/album-archive",
     github: "https://github.com/oriodev/albumarchive"
   },    {
     title: "🧁 oribebaking.",
