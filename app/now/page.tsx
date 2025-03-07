@@ -14,7 +14,7 @@ export default function Now() {
         <main>
           <DropdownMenu />
           <div className='flex flex-col items-center'>
-            <div className="w-full md:w-1/2 p-5 flex flex-col gap-5 items-center md:items-start">
+            <div className="w-full md:w-2/3 lg:w-1/2 p-5 flex flex-col gap-5 items-center md:items-start">
               <TitleAndDescription
                 title='🧭 now.'
                 description={`what i'm up to at the moment. last updated ${daysSinceUpdate}.`}

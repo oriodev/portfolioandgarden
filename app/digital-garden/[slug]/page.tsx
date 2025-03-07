@@ -28,7 +28,7 @@ export default async function Post( { params }: Props ) {
       <DropdownMenu />
 
       <div className='flex flex-col items-center w-full'>
-        <section className='w-full sm:w-1/2 p-5 flex flex-col gap-3 items-center'>
+        <section className='w-full md:w-2/3 lg:w-1/2 p-5 flex flex-col gap-3 items-center'>
             <h1 className='text-3xl font-bold'>{data.title}</h1>
 
             <div className='prose'>

@@ -11,7 +11,7 @@ export default function Page() {
       <DropdownMenu />
       <div className='flex flex-col p-5 items-center'>
 
-        <div className="w-full md:w-1/2 flex flex-col gap-5 items-center md:items-start">
+        <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 items-center md:items-start">
           <TitleAndDescription
             title='📜 resume.'
             description='professional experience, voluntary work, and education.'
