@@ -8,7 +8,7 @@ dayjs.extend(relativeTime)
 export default function Now() {
   // days since x.
   // if we have day and we have today, then subtract.
-  const daysSinceUpdate = dayjs("2025-03-02").fromNow();
+  const daysSinceUpdate = dayjs("2025-03-07").fromNow();
 
   return (
         <main>
@@ -24,17 +24,17 @@ export default function Now() {
                 <ul className='list-disc pl-3 about-text flex flex-col gap-2'>
                   <li><strong>working on album archive: </strong>basically goodreads for 
                   music. <Link href={'/#projects'}>album archive</Link> is my final year 
-                  project for my university degree. feature development
-                  is now done, so i am cleaning up the api, working on testing, and getting ready
-                  for the demonstrations taking place next week.</li>
+                  project for my university degree. feature development and refactoring
+                  is now done, so i 
+                  am <Link href={'/digital-garden/testing'} rel="noopener noreferrer" target="_blank">working on testing</Link> and 
+                  getting ready for the demonstrations taking place next week.</li>
                   <li><strong>learning java: </strong>i am working my way through
                   this <Link href={'https://www.udemy.com/course/javamasterclass/'} rel="noopener noreferrer"
             target="_blank">java masterclass</Link> course,
                   learning everything from java fundamentals through to web development with springboot,
                   and building a fully fledged expenses tracker.</li>
-                  <li><strong>building my portfolio: </strong> this portfolio is taking up a fair
-                  bit of my time at the minute. once this page is done, i will just have the resume 
-                  page to go - so almost there!</li>
+                  <li><strong>building my portfolio: </strong> this portfolio is now done, but i am working
+                  on adding analytics so that i can see how many people have visited.</li>
                   <li><strong>designing my character app: </strong> i wrote about this a bit
                   more <Link href={'/digital-garden/draggable-project'} rel="noopener noreferrer" target="_blank">here</Link>, but
                   i want to build an application that will let me track all the complicated relationships between all
