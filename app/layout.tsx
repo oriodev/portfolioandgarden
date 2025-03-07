@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script data-site="NJOHFHJ" src="https://localhost:8000/script.js" defer></script>
+      </head>
       <body
         className={`${merriweather.variable} antialiased`}
       >
