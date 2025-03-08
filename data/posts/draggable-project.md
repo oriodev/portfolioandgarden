@@ -4,6 +4,10 @@ date: "2025-03-01"
 status: "seedling"
 ---
 
+current demo is [here](https://characterapp-psi.vercel.app/).
+
+**march 3**
+
 when i was picking an idea for my final year project, i had two strong contenders: album archive (goodreads for music) or my character relationship tracking app. i LOVE writing and i have a zillion books with a zillion characters with a zillion different relationships between them, and no good way of keeping track of it all. although i chose album archive for my final year project, i would really love to start chipping away at my character app too.
 
 it needs a name, but that's always the hardest part.
@@ -19,8 +23,12 @@ as for lines, i seem to have two options: draw the lines with svgs and update th
 the first thing i would want to get figured out is the UI interface. once that's done, the rest should be fairly smooth sailing. i just need a database to keep track of the character details, pages to create, view, edit, delete characters, and like a sidebar and some UI stuff. there is authentication as well but that can come later. to start with, i can just use local storage, and move up to full auth later on if i need to. use supabase for db because it has auth and storage built in. also could use posthog later down the line to track user events/useage on the site.
 
 **MVP**
-the character canvas.
-
-character crud.
-
-local storage.
+[x] set up basic front end (march 8).
+[x] deploy to vercel (march 8).
+[x] set up jest (march 8).
+[x] link to supabase (march 8).
+[x] make draggable character canvas (march 8).
+[] make basic character CRUD.
+[] make lines between the characters.
+[] set up cicd pipeline.
+[] set up cypress.
