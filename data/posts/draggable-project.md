@@ -1,5 +1,5 @@
 ---
-title: "draggable project."
+title: "character.app."
 date: "2025-03-01"
 status: "seedling"
 ---
