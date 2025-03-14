@@ -30,5 +30,6 @@ stacks. love a good stack. also thread safe. dequeue might have better performan
 
 they have all unique values (obvs) but we can either have them unordered (hashset), ordered by insertion (linkedhashset), or sorted (treeset). hashset is the main one.
 
+-----
 
-
+**exception handling**
