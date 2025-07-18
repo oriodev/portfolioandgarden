@@ -8,7 +8,7 @@ dayjs.extend(relativeTime)
 export default function Now() {
   // days since x.
   // if we have day and we have today, then subtract.
-  const daysSinceUpdate = dayjs("2025-03-07").fromNow();
+  const daysSinceUpdate = dayjs("2025-07-18").fromNow();
 
   return (
         <main>
@@ -22,32 +22,31 @@ export default function Now() {
               
               <section className="p-4 w-full">
                 <ul className='list-disc pl-3 about-text flex flex-col gap-2'>
-                  <li><strong>working on album archive: </strong>basically goodreads for 
-                  music. <Link href={'/#projects'}>album archive</Link> is my final year 
-                  project for my university degree. feature development and refactoring
-                  is now done, so i 
-                  am <Link href={'/digital-garden/testing'} rel="noopener noreferrer" target="_blank">working on testing</Link> and 
-                  getting ready for the demonstrations taking place next week.</li>
+                  {/* GRADUATION */}
+                  <li><strong>recovering from university: </strong>i just graduated after five years of university,
+                  so right now i am taking a bit of a break, catching up on some reading, and going for a lot
+                  of long walks by the beach.</li>
+
+
+                  {/* LEARNING DSA */}
+                  <li><strong>learning dsa: </strong>i am working my way through
+                  this <Link href={'https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/'} rel="noopener noreferrer"
+            target="_blank">dsa masterclass</Link> course,
+                  refreshing myself on intermediary data structures and algorithms and furthering my understanding
+                  of more complex algorithms. this is partly for my own satisfaction and partly job interview
+                  preparation.</li>
+
+                  {/* LEARNING JAVA */}
                   <li><strong>learning java: </strong>i am working my way through
                   this <Link href={'https://www.udemy.com/course/javamasterclass/'} rel="noopener noreferrer"
             target="_blank">java masterclass</Link> course,
                   learning everything from java fundamentals through to web development with springboot,
                   and building a fully fledged expenses tracker.</li>
-                  <li><strong>building my portfolio: </strong> this portfolio is now done, but i am working
-                  on adding analytics so that i can see how many people have visited.</li>
-                  <li><strong>designing my character app: </strong> i wrote about this a bit
-                  more <Link href={'/digital-garden/draggable-project'} rel="noopener noreferrer" target="_blank">here</Link>, but
-                  i want to build an application that will let me track all the complicated relationships between all
-                  of the characters in my books. sort of like a big messy family tree, complete with draggable character
-                  icons, colour-coded lines, and clickable character profiles. right now it is just a collection of 
-                  implementation ideas and questions, because there is not enough time in the day for a brand new project,
-                  but the more i flesh it out now, the easier development will come later.</li>
-                  <li><strong>building the mvp for CONKR: </strong> i am the technical lead for the CONKR. startup.
-                  the <Link href={'https://www.conkrhq.com'} rel="noopener noreferrer" target="_blank">website</Link> is more or less done now and the app mockup is complete, so now we are
-                  all in on completing the trailer and launching our <Link href={'https://www.instagram.com/conkrhq'} rel="noopener noreferrer" target="_blank">socal media</Link> campaign.</li>
-                  <li><strong>first drafting my novel: </strong> i finished a first draft for my novel last november, decided i hated it,
-                  and completely rehauled the idea. now i am fleshing out each scene and then i will jump back into a second first draft -
-                  still undecided on whether this counts as a second draft or not, though</li>
+                  
+                  {/* NOVEL */}
+                  <li><strong>first drafting my novel: </strong> i am about a third of the way through this draft of my novel, which is
+                  admittedly not the first first draft that i have written for this one, and im working through a creative writing course
+                  alongside drafting.</li>
                 </ul>
               </section>
             </div>

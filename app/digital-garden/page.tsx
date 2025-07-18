@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <main className="">
       <DropdownMenu />
-      <div className='flex flex-col h-[90vh] sm:h-[72vh] items-center'>
+      <div className='flex flex-col items-center'>
 
 `      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 items-center md:items-start">
         <TitleAndDescription

@@ -38,7 +38,7 @@ export default function About() {
         a confusing combination of modules from all over the university) and a self-taught coder by night.
         over time, i was allowed to take more computer science modules at university and i landed a <strong>frontend internship at todaytix group</strong> in
         london. i swapped out a boring dissertation for the <strong>computer science final year project</strong>, 
-        taught myself <strong>java</strong>, got really good at <strong>full stack development</strong>, and now i&apos;m looking for my
+         got really good at <strong>full stack development</strong>, graduated with a <strong>first class</strong>, and now i&apos;m looking for my
         next steps into the professional world of software development.
       </p>
 
@@ -68,7 +68,7 @@ export default function About() {
     <section id="about" className="flex flex-col p-20 pt-30 pb-30 w-full justify-center items-center gap-10 bg-gradient-to-tr from-cyan-100 to-indigo-200 to-blue-200 clip-diagonal-both">
       <SectionHeader title="🌱 about me.">
           <Badge title="🛠️ full stack developer." click={() => setFilter(1)} active={filter === 1} />
-          <Badge title="📜 soon-to-be-graduate." click={() => setFilter(2)} active={filter === 2} />
+          <Badge title="📜 compsci graduate." click={() => setFilter(2)} active={filter === 2} />
           <Badge title="📚 life-long learner." click={() => setFilter(3)} active={filter === 3} />
       </SectionHeader>
       
