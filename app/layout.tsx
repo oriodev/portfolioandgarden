@@ -26,10 +26,12 @@ export default function RootLayout({
         <script data-site="NJOHFHJ" src="https://localhost:8000/script.js" defer></script>
       </head>
       <body
-        className={`${merriweather.variable} antialiased`}
+        className={`${merriweather.variable} antialiased min-h-screen flex flex-col`}
       >
         <Header />
-        {children}
+        <div className="flex-grow">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

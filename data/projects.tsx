@@ -16,7 +16,22 @@ export const projects: Project[] = [
     type: "js",
     livedemo: "/projects/album-archive",
     github: "https://github.com/oriodev/albumarchive"
-  },    {
+  }, 
+    {
+    title: "🟣 idle incremental.",
+    description:  (
+      <>
+        an idle incremental game built with <strong>next.js</strong> and <strong>css</strong> animations. best features
+        include the animated circles, upgrade purchases, and prestige system.
+        built alongside  <a className="font-bold hover:cursor-pointer effect-shine text-indigo-800" href="https://github.com/ybettles"> my friend yas </a>
+         using a <strong>git-based workflow</strong>.
+      </>
+    ),
+    image: "/projects/idle.png",
+    type: "js",
+    livedemo: "https://bored-sable.vercel.app/",
+    github: "https://github.com/oriodev/bored"
+  },   {
     title: "🧁 oribebaking.",
     description: (
       <>
@@ -45,22 +60,6 @@ export const projects: Project[] = [
     type: "js",
     livedemo: "/projects/snap",
     github: "https://github.com/oriodev/portfolioandgarden/tree/main/app/projects/snap"
-  },
-  {
-    title: "🎨 etch-a-sketch.",
-    description:  (
-      <>
-        a super simple etch-a-sketch app built with pure <strong>javascript/html/css</strong> as 
-        part of <a className="font-bold hover:cursor-pointer effect-shine text-indigo-800" href="https://www.theodinproject.com/">the odin project</a>.
-        if you have had a long day then take a deep breath,
-        check out the live demonstration, and spend a few minutes making a silly little drawing
-        under the guise of working. enjoy!
-      </>
-    ),
-    image: "/projects/etchasketch.png",
-    type: "js",
-    livedemo: "https://oriodev.github.io/etch-a-sketch/",
-    github: "https://github.com/oriodev/etch-a-sketch"
   },
   {
     title: "💰 cli bank manager.",

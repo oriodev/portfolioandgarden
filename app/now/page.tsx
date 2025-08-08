@@ -8,7 +8,7 @@ dayjs.extend(relativeTime)
 export default function Now() {
   // days since x.
   // if we have day and we have today, then subtract.
-  const daysSinceUpdate = dayjs("2025-07-18").fromNow();
+  const daysSinceUpdate = dayjs("2025-08-08").fromNow();
 
   return (
         <main>
@@ -27,6 +27,15 @@ export default function Now() {
                   so right now i am taking a bit of a break, catching up on some reading, and going for a lot
                   of long walks by the beach.</li>
 
+                  {/* IDLE GAME */}  
+                  <li><strong>building an idle game: </strong>i am building an idle incremental browser game
+                  with next.js. you spin some circles, purchase upgrades to make them spin faster, and
+                  prestige to earn more numbers from each circle rotation. it does some fun
+                  stuff with css animations! working on some quality of life improvements right now
+                  but it is otherwise a functional mvp that you can play 
+                  <Link href={'https://bored-sable.vercel.app/'} rel="noopener noreferrer"
+            target="_blank"> here</Link>
+            </li>
 
                   {/* LEARNING DSA */}
                   <li><strong>learning dsa: </strong>i am working my way through
