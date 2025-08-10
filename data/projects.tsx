@@ -22,7 +22,7 @@ export const projects: Project[] = [
     description:  (
       <>
         an idle incremental game built with <strong>next.js</strong> and <strong>css</strong> animations. best features
-        include the animated circles, upgrade purchases, and prestige system.
+        include local storage handling, upgrade purchases, and prestige system.
         built alongside  <a className="font-bold hover:cursor-pointer effect-shine text-indigo-800" href="https://github.com/ybettles"> my friend yas </a>
          using a <strong>git-based workflow</strong>.
       </>
