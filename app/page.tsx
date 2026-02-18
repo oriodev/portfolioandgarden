@@ -1,5 +1,5 @@
 import About from "@/components/containers/about";
-import Certificates from "@/components/containers/certificates";
+// import Certificates from "@/components/containers/certificates";
 import Contact from "@/components/containers/contact";
 import Projects from "@/components/containers/projects";
 import HomeInfo from "@/components/info/homeinfo";

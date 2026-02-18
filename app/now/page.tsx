@@ -30,7 +30,7 @@ export default function Now() {
                   <li><strong>building somanywords: </strong>i am building a writing tracker app, where you 
                   can input a daily wordcount each day and it will tell you how many more words you need 
                   to write to reach your goals on time. you can also see cool stats and graphs analysing
-                   your progress and writing patterns. it's been a super fun exercise in data manipulation, and 
+                   your progress and writing patterns. it&apos;s been a super fun exercise in data manipulation, and 
                    as a writer, i am also finding it incredibly useful. you can check it out
                   <Link href={'https://somanywords.co.uk/'} rel="noopener noreferrer"
             target="_blank"> here.</Link>
