@@ -2,6 +2,21 @@ import { Project } from "@/types/types";
 
 export const projects: Project[] = [
   {
+    title: "🖋️ so many words.",
+    description: (
+      <>
+        track how many words you have written, use dynamic timeline projections to reach your goal on time,
+        and see your progress in interesting graphs and analytics. built with <strong>next.js</strong>, 
+        <strong> recharts</strong> and <strong>postgresql</strong>, utilising <strong>supabase</strong> for
+        authentication.
+      </>
+    ),
+    image: "/projects/somanywords.png",
+    type: "js",
+    livedemo: "https://somanywords.co.uk",
+    github: "https://github.com/oriodev/so-many-words"
+  },
+  {
     title: "💿 album archive.",
     description: (
       <>
@@ -46,20 +61,6 @@ export const projects: Project[] = [
     type: "js",
     livedemo: "",
     github: "https://github.com/oriodev/oribebaking"
-  },    {
-    title: "🃏 snap!",
-    description: (
-      <>
-        a javascript snap game built with <strong>object oriented programming</strong> principles
-        and <strong>react</strong> state handling. user can play snap against a (kinda)
-        slow computer. still a wip but you can play the mvp now. multiplayer, win states, and keyboard
-        support coming.
-      </>
-    ),
-    image: "/projects/snap.png",
-    type: "js",
-    livedemo: "/projects/snap",
-    github: "https://github.com/oriodev/portfolioandgarden/tree/main/app/projects/snap"
   },
   {
     title: "💰 cli bank manager.",

@@ -11,7 +11,7 @@ export default function Home() {
       <HomeInfo />
       <About />
       <Projects />
-      <Certificates />
+      {/* <Certificates /> */}
       <Contact />
     </main>
   );
