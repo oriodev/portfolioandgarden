@@ -61,5 +61,19 @@ export const projects: Project[] = [
     type: "js",
     livedemo: "",
     github: "https://github.com/oriodev/oribebaking"
+  },
+  {
+    title: "📱 CONKR Start Up",
+    description: (
+      <>
+        A university start up project. We ran a <strong>marketing campaign</strong> and pitched to two groups of 
+        investors, earning the <strong>highest grade</strong> out of the cohort. I created the website with <strong>Wordpress</strong>, 
+        built an app mock up with <strong>Figma</strong>, and used <strong>Excel</strong> to handle the finances.
+      </>
+    ),
+    image: "/projects/conkr/website.png",
+    type: "website",
+    livedemo: "/projects/conkr",
+    github: ""
   }
 ]

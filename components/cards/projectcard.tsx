@@ -33,7 +33,11 @@ export default function ProjectCard({ project }: Props) {
           <Button link={'#'} text="🚧 Demo In Progress" active={false} />
         )
       }
-      <Button link={project.github} text="💾 Github" active={true} />
+
+      {
+        project.type === 'js' &&
+        <Button link={project.github} text="💾 Github" active={true} />
+      }
     </div>
   </div>
   )

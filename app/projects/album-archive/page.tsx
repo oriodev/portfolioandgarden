@@ -4,7 +4,7 @@ import DropdownMenu from "@/components/dropdowns/dropdownmenu";
 import TitleAndDescription from "@/components/info/titleanddescription";
 
 export default function Page() {
-  const technologies = ["next.js", "tailwind", "shadcn", "nest.js", "discogs api", "mongodb", "socket.io", "jwt-token"]
+  const technologies = ["Next.JS", "Tailwind", "Shadcn", "Nest.JS", "Discogs API", "Mongodb", "Socket.io", "jwt-token"]
 
   return (
        <main className="">
@@ -13,8 +13,8 @@ export default function Page() {
     
           <div className="w-full sm:w-1/2 flex flex-col gap-5 items-center">
             <TitleAndDescription
-              title='💿 album archive.'
-              description='tldr; basically goodreads for music. a fullstack application that 
+              title='💿 Album Archive'
+              description='Basically Goodreads for music. A fullstack application that 
               allows users to track their listening history, discover new albums, and chat
               with other fans of their favourite albums.'
             />
@@ -24,7 +24,7 @@ export default function Page() {
                   <iframe
                     width="800"
                     height="450"
-                    src="https://www.youtube.com/embed/aNF6h7o1WRI" // Replace VIDEO_ID with the actual ID
+                    src="https://www.youtube.com/embed/aNF6h7o1WRI"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -32,12 +32,12 @@ export default function Page() {
               </div>
 
               <div>
-                <Button text="⚗️ github." link="https://github.com/oriodev/albumarchive" active/>
+                <Button text="⚗️ Github Repo" link="https://github.com/oriodev/albumarchive" active/>
               </div>
               
               <div className="w-full p-5 rounded-lg bg-gradient-to-tr from-cyan-100 to-indigo-200 to-blue-200">
                 <BadgeDisplay
-                  title="technologies used."
+                  title="Technologies Used"
                   badges={technologies}
                 />
               </div>
