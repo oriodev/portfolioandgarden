@@ -14,8 +14,8 @@ export default function Page() {
 
 `      <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col gap-5 items-center md:items-start">
         <TitleAndDescription
-          title='🍀 digital garden.'
-          description='a collection of ideas and things i&apos;m figuring out.'
+          title='🍀 Digital Garden'
+          description='A collection of ideas and things I&apos;m figuring out'
         />
         
         <section className="p-4 w-full">

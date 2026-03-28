@@ -16,29 +16,26 @@ export default function Now() {
           <div className='flex flex-col items-center'>
             <div className="w-full md:w-2/3 lg:w-1/2 p-5 flex flex-col gap-5 items-center md:items-start">
               <TitleAndDescription
-                title='🧭 now.'
-                description={`what i'm up to at the moment. last updated ${daysSinceUpdate}.`}
+                title='🧭 Now'
+                description={`What I'm up to at the moment. Last updated ${daysSinceUpdate}.`}
               />
               
               <section className="p-4 w-full">
                 <ul className='list-disc pl-3 about-text flex flex-col gap-2'>
                   {/* JOB APPLICATIONS */}
-                  <li><strong>applying to jobs: </strong>i am in the full swing of writing cvs, trawling
-                   through linkedin, and chatting with cool people about the work they do.</li>
+                  <li><strong>Applying to jobs:</strong> I am in the full swing of writing CVs, trawling through LinkedIn, and chatting with cool people about the work they do.</li>
 
                   {/* PROJECTS */}  
-                  <li><strong>building somanywords: </strong>i am building a writing tracker app, where you 
-                  can input a daily wordcount each day and it will tell you how many more words you need 
-                  to write to reach your goals on time. you can also see cool stats and graphs analysing
-                   your progress and writing patterns. it&apos;s been a super fun exercise in data manipulation, and 
-                   as a writer, i am also finding it incredibly useful. you can check it out
-                  <Link href={'https://somanywords.co.uk/'} rel="noopener noreferrer"
-            target="_blank"> here.</Link>
-            </li>
+                  <li><strong>Building SoManyWords:</strong> I am building a writing tracker app 
+                  that lets you keep track of daily word counts and project deadlines. It provides 
+                  dynamic timeline projections and a range of cool stats and graphs to analyse
+                  your progress and writing patterns. It's been a fun exercise in data manipulation,
+                  and as a writer, I'm finding it incredibly useful in my day to day life.
+                  You can check it out <Link href={'https://somanywords.co.uk/'} rel="noopener noreferrer" target="_blank">here</Link>.</li>
                   
                   {/* NOVEL */}
-                  <li><strong>second drafting my novel and other things: </strong> i am working on the second draft of
-                   my novel in my spare time. i am also reading a lot of books and learning how to draw!</li>
+                  <li><strong>Second drafting my novel and other things:</strong> In my space time,
+                  I'm working on the second draft of my novel. I'm also reading a lot and enjoying the sun.</li>
                 </ul>
               </section>
             </div>

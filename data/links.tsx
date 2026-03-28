@@ -1,30 +1,30 @@
 export const links = [
   {
-      title: '🪴 home',
+      title: '🪴 Home',
       slug: '/',
   },
   {
-      title: '🌱 about',
+      title: '🌱 About',
       slug: '/#about'
   },        
   {
-      title: '🔥 projects',
+      title: '🔥 Projects',
       slug: '/#projects'
   },
   {
-      title: '💌 contact',
+      title: '💌 Contact',
       slug: '/#contact'
   },        
   {
-      title: '📜 resume',
+      title: '📜 Resume',
       slug: '/resume',
   },       
   {
-      title: '🍀 digital garden',
+      title: '🍀 Digital Garden',
       slug: '/digital-garden'
   },        
   {
-      title: '🧭 now',
+      title: '🧭 Now',
       slug: '/now',
   },
 ]

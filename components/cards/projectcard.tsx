@@ -28,12 +28,12 @@ export default function ProjectCard({ project }: Props) {
     <div className="flex flex-wrap gap-2">
       {
         project.livedemo ? (
-          <Button link={project.livedemo} text="🎬 see demo" active={true} />
+          <Button link={project.livedemo} text="🎬 See Demo" active={true} />
         ) : (
-          <Button link={'#'} text="🚧 demo in progress" active={false} />
+          <Button link={'#'} text="🚧 Demo In Progress" active={false} />
         )
       }
-      <Button link={project.github} text="💾 github" active={true} />
+      <Button link={project.github} text="💾 Github" active={true} />
     </div>
   </div>
   )

@@ -26,10 +26,9 @@ const Contact: FC = () => {
   }
 
   return (
-    <div id='contact' className='flex justify-center w-full p-15 pt-30 pb-30 bg-gradient-to-tr from-cyan-100 to-indigo-200 clip-diagonal-both'>
+    <div id='contact' className='flex justify-center w-full p-15 pt-30 pb-30 bg-gradient-to-bl from-violet-200 to-indigo-200 clip-diagonal-both'>
       <div className='w-full sm:w-1/2 lg:w-1/3'>
-        <SectionHeader title="💌 contact." />
-        {/* #TODO: ADD A 'I WOULD LOVE TO CHAT' MSSG HERE. */}
+        <SectionHeader title="💌 Contact" />
 
         <form onSubmit={handleSubmit(onSubmit)} className='pt-5'>
           <div className='mb-5'>
@@ -37,11 +36,11 @@ const Contact: FC = () => {
               htmlFor='name'
               className='mb-3 block text-base font-medium text-black'
             >
-              🍂 name/nickname.
+              🍂 Name/Nickname
             </label>
             <input
               type='text'
-              placeholder='name or a nickname.'
+              placeholder='Name or a nickname'
               className='w-full rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-indigo-300 focus:shadow-md'
               {...register('name', { required: true })}
             />
@@ -51,7 +50,7 @@ const Contact: FC = () => {
               htmlFor='email'
               className='mb-3 block text-base font-medium text-black'
             >
-              📪 email.
+              📪 Email
             </label>
             <input
               type='email'
@@ -65,11 +64,11 @@ const Contact: FC = () => {
               htmlFor='message'
               className='mb-3 block text-base font-medium text-black'
             >
-              🖋️ message.
+              🖋️ Message
             </label>
             <textarea
               rows={9}
-              placeholder='your message goes here.'
+              placeholder='Your message goes here'
               className='w-full resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-indigo-300 focus:shadow-md'
               {...register('message', { required: true })}
             ></textarea>
@@ -79,7 +78,7 @@ const Contact: FC = () => {
               💌 Send
             </button>
             {success && (
-              <p className='font-bold text-center pt-3'>🎉 message sent 🎉</p>
+              <p className='font-bold text-center pt-3'>🎉 Message Sent 🎉</p>
             )}
           </div>
         </form>
