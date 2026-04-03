@@ -10,6 +10,10 @@ const postsDirectory = path.join(process.cwd(), '/data/posts');
 interface Props {
   params: Promise<{ slug: string }>
 }
+export const metadata = {
+  title: 'Digital Garden'
+};
+
 
 export default async function Post( { params }: Props ) {
 

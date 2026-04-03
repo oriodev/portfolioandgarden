@@ -3,6 +3,10 @@ import BadgeDisplay from "@/components/containers/badgedisplay";
 import DropdownMenu from "@/components/dropdowns/dropdownmenu";
 import TitleAndDescription from "@/components/info/titleanddescription";
 
+export const metadata = {
+  title: 'Album Archive'
+};
+
 export default function Page() {
   const technologies = ["Next.JS", "Tailwind", "Shadcn", "Nest.JS", "Discogs API", "Mongodb", "Socket.io", "jwt-token"]
 

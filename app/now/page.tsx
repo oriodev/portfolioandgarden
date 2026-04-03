@@ -5,6 +5,10 @@ import Link from 'next/link';
 import DropdownMenu from '@/components/dropdowns/dropdownmenu';
 dayjs.extend(relativeTime)
 
+export const metadata = {
+  title: 'Now Page'
+};
+
 export default function Now() {
   // days since x.
   // if we have day and we have today, then subtract.

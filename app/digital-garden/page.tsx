@@ -3,6 +3,10 @@ import DropdownMenu from '@/components/dropdowns/dropdownmenu';
 import TitleAndDescription from '@/components/info/titleanddescription';
 import { getPosts } from '@/utils/general.utils';
 
+export const metadata = {
+  title: 'Digital Garden'
+};
+
 export default function Page() {
 
   const posts = getPosts();

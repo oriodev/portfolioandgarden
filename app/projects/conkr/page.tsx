@@ -4,6 +4,10 @@ import DropdownMenu from "@/components/dropdowns/dropdownmenu";
 import TitleAndDescription from "@/components/info/titleanddescription";
 import Image from "next/image";
 
+export const metadata = {
+  title: 'CONKR'
+};
+
 export default function Page() {
 
   const thingsILearnt = ['Figma App Mockups', 'Analytics', 'Conversion Rate Optimisation', 'Investor Pitching', 'Wordpress Development', 'SEO', 'Excel Automation', 'Risk Mitigation', 'User Research', 'Social Media Marketing', 'Market Research', 'Report Writing']

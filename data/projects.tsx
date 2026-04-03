@@ -75,5 +75,19 @@ export const projects: Project[] = [
     type: "website",
     livedemo: "/projects/conkr",
     github: ""
+  },
+  {
+    title: "📽️ North Atlantic Cinema Website",
+    description: (
+      <>
+        A <strong>Wordpress</strong> project designed to improve
+        the website used by my local indie cinema and boost sales through a better user experience.
+        This project was built using <strong>LocalWP</strong> to run Wordpress locally.
+      </>
+    ),
+    image: "/projects/north-atlantic-cinema/projectcover.png",
+    type: "website",
+    livedemo: "/projects/north-atlantic-cinema",
+    github: ""
   }
 ]
