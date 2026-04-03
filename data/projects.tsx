@@ -77,7 +77,7 @@ export const projects: Project[] = [
     github: ""
   },
   {
-    title: "📽️ North Atlantic Cinema Website",
+    title: "📽️ North Atlantic Cinema",
     description: (
       <>
         A <strong>Wordpress</strong> project designed to improve
@@ -96,8 +96,7 @@ export const projects: Project[] = [
       <>
         A <strong>Shopify</strong> site designed to
         learn the ins and outs of eCommerce with Shopify. This project was built with a
-        Shopify development site. It is still a work in progress and more information and 
-        designs will be uploaded here over the next few weeks.
+        Shopify development site.
       </>
     ),
     image: "/projects/romeos-books/projectcover.png",
