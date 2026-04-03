@@ -89,5 +89,20 @@ export const projects: Project[] = [
     type: "website",
     livedemo: "/projects/north-atlantic-cinema",
     github: ""
+  },
+  {
+    title: "📚 Romeo's Books",
+    description: (
+      <>
+        A <strong>Shopify</strong> site designed to
+        learn the ins and outs of eCommerce with Shopify. This project was built with a
+        Shopify development site. It is still a work in progress and more information and 
+        designs will be uploaded here over the next few weeks.
+      </>
+    ),
+    image: "/projects/romeos-books/projectcover.png",
+    type: "website",
+    livedemo: "/projects/romeos-books",
+    github: ""
   }
 ]
