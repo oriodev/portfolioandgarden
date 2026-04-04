@@ -92,8 +92,8 @@ export default function Page() {
                 <h3 className="text-2xl">App Integrations</h3>
                 <p>
                   To boost sales, I integrated <strong>email marketing</strong> and <strong>reviews</strong> into 
-                   the app. I designed required custom email templates to nudge customers into returning
-                  to the store and alert them to upcoming campaigns. Reviews used the <strong>Judge.Me</strong> app
+                   the app. I designed custom email templates to nudge customers into returning
+                  to the store and alert them to upcoming campaigns. I used the <strong>Judge.Me</strong> app
                   to add a new review block to the product page template.
                 </p>
 
