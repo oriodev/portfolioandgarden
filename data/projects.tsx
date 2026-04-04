@@ -94,9 +94,9 @@ export const projects: Project[] = [
     title: "📚 Romeo's Books",
     description: (
       <>
-        A <strong>Shopify</strong> site designed to
-        learn the ins and outs of eCommerce with Shopify. This project was built with a
-        Shopify development site.
+        A <strong>Shopify</strong> store built as a
+        Shopify development site. Integrated with <strong>Google Analytics</strong>,
+        with a focus on <strong>Conversion Rate Optimisation</strong>.
       </>
     ),
     image: "/projects/romeos-books/projectcover.png",
