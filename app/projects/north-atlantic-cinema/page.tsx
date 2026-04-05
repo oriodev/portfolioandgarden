@@ -50,6 +50,7 @@ export default function Page() {
               </div>
             </section>
 
+            {/* SETUP */}
             <section className="w-full flex flex-col gap-7 about-text">
               <div className="flex flex-col gap-2">
                 <h3 className="text-2xl">Initial Set Up</h3>
@@ -59,6 +60,33 @@ export default function Page() {
                   the <strong>Colibri Page Builder</strong> plugin. I then installed <strong>YoastSEO</strong> for 
                   SEO, <strong>Wordfence</strong> for security, <strong>WP-Optimise</strong> for
                    caching and optimisation, and <strong>Updraft</strong> for backups and restoration.
+                </p>
+              </div>
+              <Image
+                src={'/projects/north-atlantic-cinema/demo1.png'}
+                alt="Website Screenshot"
+                height={900}
+                width={900}
+              />
+
+               <Image
+                src={'/projects/north-atlantic-cinema/demo2.png'}
+                alt="Website Screenshot"
+                height={900}
+                width={900}
+              />
+            </section>
+
+            {/* SECURITY AND OTHER STUFF */}
+            <section className="w-full flex flex-col gap-7 about-text">
+              <div className="flex flex-col gap-2">
+                <h3 className="text-2xl">Security</h3>
+                <p>
+                  Using <strong>Wordfence</strong>, I configured the firewalls and set up 
+                  automated security scans. Since this is hosted locally, I used a self-signed 
+                  certificate to connect through <strong>SSL</strong>, with the aim to move 
+                  to something more robust upon hosting. I also resolved a plugin conflict  
+                  using <strong>debug logs</strong> and <strong>WP-CLI</strong>.
                 </p>
               </div>
               <Image
