@@ -89,19 +89,6 @@ export default function Page() {
                   using <strong>debug logs</strong> and <strong>WP-CLI</strong>.
                 </p>
               </div>
-              <Image
-                src={'/projects/north-atlantic-cinema/demo1.png'}
-                alt="Website Screenshot"
-                height={900}
-                width={900}
-              />
-
-               <Image
-                src={'/projects/north-atlantic-cinema/demo2.png'}
-                alt="Website Screenshot"
-                height={900}
-                width={900}
-              />
             </section>
           </div>
           </div>
