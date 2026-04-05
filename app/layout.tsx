@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 import "./globals.css";
 import { Merriweather } from 'next/font/google';
 
@@ -20,6 +22,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const tag = process.env.GOOGLE_ANALYTICS_TAG || '';
+
   return (
     <html lang="en">
       <head>
@@ -34,6 +39,7 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
+      <GoogleAnalytics gaId={tag} />
     </html>
   );
 }
