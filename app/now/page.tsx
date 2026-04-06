@@ -12,7 +12,7 @@ export const metadata = {
 export default function Now() {
   // days since x.
   // if we have day and we have today, then subtract.
-  const daysSinceUpdate = dayjs("2026-02-18").fromNow();
+  const daysSinceUpdate = dayjs("2026-04-06").fromNow();
 
   return (
         <main>
@@ -26,8 +26,11 @@ export default function Now() {
               
               <section className="p-4 w-full">
                 <ul className='list-disc pl-3 about-text flex flex-col gap-2'>
-                  {/* JOB APPLICATIONS */}
-                  <li><strong>Applying to jobs:</strong> I am in the full swing of writing CVs, trawling through LinkedIn, and chatting with cool people about the work they do.</li>
+                  {/* WEBSITES */}
+                  <li><strong>Developing Wordpress & Shopify Sites:</strong> I have been putting a lot 
+                  of hours into building a <Link href={'/projects/north-atlantic-cinema'} rel="noopener noreferrer" target="_blank">Wordpress</Link> site 
+                  redesign for my local cinema. I have also been hard at work learning the ins and outs of Shopify 
+                  with my <Link href={'/projects/romeos-books'} rel="noopener noreferrer" target="_blank">Shopify Book Store</Link>.</li>
 
                   {/* PROJECTS */}  
                   <li><strong>Building SoManyWords:</strong> I am building a writing tracker app 
