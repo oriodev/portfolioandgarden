@@ -111,6 +111,17 @@ export default function Page() {
                 width={900}
               />
             </section>
+
+            {/* DATA */}
+            <section className="w-full flex flex-col gap-7 about-text">
+              <div className="flex flex-col gap-2">
+                <h3 className="text-2xl">Data</h3>
+                <p>
+                  Using <strong>CSV</strong> import/exports and the <strong>bulk editor</strong>, I 
+                  handled data updates, backups, and migrations across sites.
+                </p>
+              </div>
+            </section>
           </div>
           </div>
         </main>
