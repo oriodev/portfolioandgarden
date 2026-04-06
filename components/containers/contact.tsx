@@ -26,7 +26,7 @@ const Contact: FC = () => {
   }
 
   return (
-    <div id='contact' className='flex justify-center w-full p-15 pt-30 pb-30 bg-gradient-to-bl from-violet-200 to-indigo-200 clip-diagonal-both'>
+    <div id='contact' className='flex justify-center w-full p-15 pt-30 pb-30 bg-gradient-to-b from-indigo-200 to-blue-200 clip-diagonal-both'>
       <div className='w-full sm:w-1/2 lg:w-1/3'>
         <SectionHeader title="💌 Contact" />
 

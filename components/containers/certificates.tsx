@@ -8,16 +8,16 @@ export default function Certificates() {
 
   const certificates: Certificate[] = [
     {
-      title: 'sql (basic)',
-      description: 'the hackerrank basic sql certification. it represents my ability to use fundamental sql concepts such as aggregations and joins.',
-      image: '/'
+      title: 'Hubspot Academy SEO',
+      description: 'Certifies SEO understanding and ability to optimise a website to perform well in search engines.',
+      image: '/certs/seocert.png'
     }
-  ]
+  ];
 
   return (
-    <section id="projects" className="flex flex-col w-full p-5 pt-30 pb-30 justify-center items-center gap-6 bg-gradient-to-tr from-cyan-100 to-blue-200 to-indigo-300 clip-diagonal-both">
+    <section id="projects" className="flex flex-col w-full p-5 pt-30 pb-30 justify-center items-center gap-6 bg-gradient-to-bl from-violet-200 to-indigo-200 clip-diagonal-both">
 
-    <SectionHeader title="🏆 certificates.">
+    <SectionHeader title="🏆 Certifications">
     </SectionHeader>
 
 
