@@ -11,7 +11,7 @@ export const metadata = {
 export default function Page() {
 
   const thingsILearnt = ['Shopify', 'Theme Customisation', "Google Analytics", "Email Marketing",
-    "Conversion Rate Optimisation", "AI Tools"
+    "Conversion Rate Optimisation", "AI Tools", "Data Migration", "Lighthouse", "Performance Optimisation"
   ]
 
   return (
@@ -32,8 +32,8 @@ export default function Page() {
                 <p>
                   <strong>Romeo&apos;s Books</strong> is a <strong>Shopify</strong> site designed to
                   learn the ins and outs of eCommerce with Shopify. This project was built with a
-                  Shopify development site. It is still a work in progress and more information and 
-                  designs will be uploaded here over the next few weeks.
+                  Shopify development site and uses a range of Shopify integrations, Google Analytics, and 
+                  Google Lighthouse for performance testing.
                 </p>
               </div>
 
@@ -115,10 +115,16 @@ export default function Page() {
             {/* DATA */}
             <section className="w-full flex flex-col gap-7 about-text">
               <div className="flex flex-col gap-2">
-                <h3 className="text-2xl">Data</h3>
+                <h3 className="text-2xl">Data & Performance Optimisation</h3>
                 <p>
                   Using <strong>CSV</strong> import/exports and the <strong>bulk editor</strong>, I 
                   handled data updates, backups, and migrations across sites.
+                </p>
+                <p>
+                  To optimise the site, I ran Google Lighthouse to get baseline scores. The initial store 
+                  had a score of 74 for performance. Using an app integration, I compressed the 
+                  images across the store and checked for heavy apps. After these improvements, the store 
+                  reached a performance score of 89.
                 </p>
               </div>
             </section>

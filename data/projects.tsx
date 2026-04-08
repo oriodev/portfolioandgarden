@@ -62,6 +62,21 @@ export const projects: Project[] = [
     livedemo: "",
     github: "https://github.com/oriodev/oribebaking"
   },
+    {
+    title: "🐳 Portfolio Site",
+    description: (
+      <>
+        This site! Built with <strong>Next.js</strong>, <strong>React</strong>, and <strong>HTML/CSS</strong>. It 
+        uses <strong>Google Analytics</strong> to see who's poking 
+        around, <strong>Cloudflare</strong> to keep the bots out, and <strong>Vercel</strong> for 
+        hosting. 
+      </>
+    ),
+    image: "/projects/portfolio/portfoliocover.png",
+    type: "website",
+    livedemo: "/projects/portfolio",
+    github: ""
+  },
   {
     title: "📱 CONKR Start Up",
     description: (
@@ -94,9 +109,10 @@ export const projects: Project[] = [
     title: "📚 Romeo's Books",
     description: (
       <>
-        A <strong>Shopify</strong> store built as a
-        Shopify development site. Integrated with <strong>Google Analytics</strong>,
-        with a focus on <strong>Conversion Rate Optimisation</strong>.
+        A <strong>Shopify</strong> book store with a wide range 
+        of products and collections. Integrated with <strong>Google Analytics</strong>. 
+        A strong focus on <strong>email marketing</strong>, using inbuilt <strong>Shopify Apps</strong> to 
+        create custom <strong>email campaigns</strong>.
       </>
     ),
     image: "/projects/romeos-books/projectcover.png",
