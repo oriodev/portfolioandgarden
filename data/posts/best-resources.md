@@ -1,8 +1,8 @@
 ---
-title: "best resources for learning to code."
+title: "Coding Resources"
 date: "2025-03-09"
 status: "seedling"
 ---
 
-**sql**
-- learning sql from scratch: [selectstarsql](https://selectstarsql.com/frontmatter.html)
+**SQL**
+- Learning SQL from scratch: [selectstarsql](https://selectstarsql.com/frontmatter.html)

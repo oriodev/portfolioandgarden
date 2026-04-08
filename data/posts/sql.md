@@ -1,5 +1,5 @@
 ---
-title: "sql basics."
+title: "SQL Basics"
 date: "2025-03-09"
 status: "seedling"
 ---
@@ -15,7 +15,7 @@ LIMIT <number>
 SELECT DISTINCT *
 ```
 
-select distinct only returns unique values.
+Select distinct only returns unique values.
 
 **WHERE**
 
@@ -24,7 +24,7 @@ FROM <table>
 WHERE <clause>
 ```
 
-a clause is a boolean expression. the command will return a row if the boolean expression returns true for that row.
+A clause is a boolean expression. The command will return a row if the boolean expression returns true for that row.
 
 ```sql
 WHERE <column> LIKE '%<string>'
@@ -37,7 +37,7 @@ _ will match a single letter before, eg. _roy will match troy but not deroy.
 
 **AGGREGATION**
 
-aggregation is combining multiples pieces of data into one whole; we take multiple rows of data and combine them into one number. a good example is counting a total.
+Aggregation is combining multiples pieces of data into one whole; we take multiple rows of data and combine them into one number. A good example is counting a total.
 
 ```sql
 SELECT COUNT(<column>) FROM <table>
@@ -52,7 +52,7 @@ SELECT
 FROM <row>;
 ```
 
-count returns the number of non-null rows. the COUNT WHERE statement is more performant than the CASE WHEN statement because in the COUNT WHERE statement, the list is filtered down before it counts.
+Count returns the number of non-null rows. The COUNT WHERE statement is more performant than the CASE WHEN statement because in the COUNT WHERE statement, the list is filtered down before it counts.
 
 ```sql
 SELECT MIN(<column>) FROM <table>;
@@ -71,7 +71,7 @@ SELECT
 FROM executions
 ```
 
-this kind of maths works best with CASE WHEN commands (because WHERE commands have to be applied to the whole statement, as does FROM).
+This kind of maths works best with CASE WHEN commands (because WHERE commands have to be applied to the whole statement, as does FROM).
 
 **GROUPING**
 
@@ -110,9 +110,9 @@ ORDER BY day_difference DESC
 LIMIT 10
 ```
 
-this sort of join basically pads out the FROM statement so that it is not just from executions, but executions joined on previous where ex_number = ex_number. you just have to put a statement there that is either true or false and if it is true, the row is returned with that extra data from previous.
+This sort of join basically pads out the FROM statement so that it is not just from executions, but executions joined on previous where ex_number = ex_number. You just have to put a statement there that is either true or false and if it is true, the row is returned with that extra data from previous.
 
-inner joins drop rows if they do not match. a left join only drops rows from the right table, a right join only drops rows from the left table, and an outer join keeps them all.
+Inner joins drop rows if they do not match. A left join only drops rows from the right table, a right join only drops rows from the left table, and an outer join keeps them all.
 
 ```sql
 
@@ -134,7 +134,7 @@ ORDER BY day_difference DESC
 LIMIT 10
 ```
 
-you can make your own new table to put in the JOIN clause, as above.
+You can make your own new table to put in the JOIN clause, as above.
 
 **ORDER BY**
 
@@ -147,4 +147,4 @@ ORDER BY
     ID ASC
 ```
 
-you can put whatever statement you like in ORDER BY and you can also have secondary etc. orders by just putting them next. substrings also work easily here, you just put the thing you want the substring of, the start position, and then how many letters from there.
+You can put whatever statement you like in ORDER BY and you can also have secondary etc. orders by just putting them next. Substrings also work easily here, you just put the thing you want the substring of, the start position, and then how many letters from there.

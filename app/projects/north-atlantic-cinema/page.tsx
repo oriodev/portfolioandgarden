@@ -80,13 +80,19 @@ export default function Page() {
             {/* SECURITY AND OTHER STUFF */}
             <section className="w-full flex flex-col gap-7 about-text">
               <div className="flex flex-col gap-2">
-                <h3 className="text-2xl">Security</h3>
+                <h3 className="text-2xl">Security and Performance</h3>
                 <p>
                   Using <strong>Wordfence</strong>, I configured the firewalls and set up 
                   automated security scans. Since this is hosted locally, I used a self-signed 
                   certificate to connect through <strong>SSL</strong>, with the aim to move 
                   to something more robust upon hosting. I also resolved a plugin conflict  
                   using <strong>debug logs</strong> and <strong>WP-CLI</strong>.
+                </p>
+                <p>
+                  I then used <strong>Lighthouse</strong> to determine the performance rating 
+                  for the site. Once I had established a baseline, I used image compression, 
+                  HTML/CSS minifying, caching, and critical CSS deference to <strong>increase the 
+                  performance rating to above 90</strong> and significantly reduce the time to LCP.
                 </p>
               </div>
             </section>
